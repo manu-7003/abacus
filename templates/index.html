@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Practice Application</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="app">
+    <h1>Math Practice</h1>
+    <div id="question-container">
+      <p id="question"></p>
+      <input type="number" id="answer" placeholder="Enter your answer">
+      <button id="submit-answer">Submit</button>
+    </div>
+    <div id="result-container" style="display:none;">
+      <h2>Quiz Results</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Math Practice App</p>
+  </footer>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
